@@ -1,0 +1,36 @@
+//Declaramos la libreria prederteminada
+#include <iostream>
+
+//Declaramos una constante de pi 
+#define PI 3.1416
+
+//Definimos nuestro espacio de nombres  
+using namespace std; 
+
+/* Vamos a declarar una primer funcion que nos servirá para calcular
+ el area de un circulo pasando un parametro */
+ 
+//El parametro que pasaremos es el radio y este lo nombraremos R
+
+float area_circulo(float R) {
+	//Definimos la formula para calcular el area deb un circulo Radio * Radio * PI
+	return PI*R*R;
+}
+
+/* Vamos a declarar una funcion para calcular el area de un cuadrado, donde pasaremos 
+como parametro cada lado y lo nombraremos L */
+float area_cuadrado(float L){
+	//Definimos la formula para calcular el area de un cuadrado A= L * L
+	return L*L;
+}
+
+float area_rombo (float da, float Db){
+	// Definimos la formula para calcular el are de un rombo da= diagonal a , Db=Diagonal b
+	return (da * Db)/2;
+}
+/* Vamos a declarar una funcion para calcular el area de un triangulo, donde pasaremos
+ 2 parametros Base y Altura donde Base = B y Altura = H */
+float area_triangulo(float B, float H){
+	//Definimos la formula para calcular el area de un triangulo A= (B*H)/2
+	return (B*H)/2;
+}
